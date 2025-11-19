@@ -1,0 +1,39 @@
+# Surprize Muzicale – Comenzi de melodii personalizate
+
+Acesta este proiectul oficial pentru **surprizemuzicale.ro**, un site unde clienții pot comanda melodii personalizate create special pentru ei.
+
+## 📌 Structura proiectului
+
+## 🚀 Funcționalități
+
+- Comandă melodii personalizate  
+- Plată cu cardul prin **Stripe**
+- Panou Admin cu vizualizare comenzi
+- Email automat către client și admin
+- Webhook Stripe pentru confirmarea plăților
+- Sistem complet de generare și salvare comenzi
+
+## 🛠 Tehnologii
+
+- **React** (frontend)
+- **Node.js + Express** (backend)
+- **MongoDB Atlas** (bază de date)
+- **Stripe** (procesare plăți)
+- **Render** (hosting)
+
+## ⚙️ Configurare locală
+
+### 1. Frontend
+
+```bash
+cd frontend
+npm install
+npm start
+MONGODB_URI=...
+STRIPE_SECRET_KEY=...
+STRIPE_WEBHOOK_SECRET=...
+SUCCESS_URL=http://localhost:3000/success
+CANCEL_URL=http://localhost:3000/cancel
+cd server
+npm install
+npm start
